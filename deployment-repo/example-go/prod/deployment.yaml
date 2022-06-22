@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: example-go
-        image: registry.localhost:5000/example-go:1.1
+        image: registry.localhost:5000/example-go:1.2
         ports:
         - containerPort: 8080
         resources:

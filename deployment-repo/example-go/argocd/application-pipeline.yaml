@@ -1,0 +1,12 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: example-go-pipeline
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoUrl: https://github.com/nambrosini/example-go.git
+    targetRevision: HEAD
+    path: deployment-repo/sample/pipeline
+
