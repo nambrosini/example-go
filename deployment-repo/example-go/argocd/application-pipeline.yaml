@@ -8,5 +8,12 @@ spec:
   source:
     repoUrl: https://github.com/nambrosini/example-go.git
     targetRevision: HEAD
-    path: deployment-repo/sample/pipeline
-
+    path: deployment-repo/example-go/pipeline
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: tekton-pipelines
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: false
+      allowEmpty: false
