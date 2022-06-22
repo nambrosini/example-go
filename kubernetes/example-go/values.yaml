@@ -1,0 +1,9 @@
+name: example-go
+deployment:
+  replicas: 2
+  image:
+    name: registry.localhost:5000/example-go
+    tag: "1.0"
+    port: 8080
+service:
+  port: 80
